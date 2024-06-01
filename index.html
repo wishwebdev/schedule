@@ -1,1 +1,27 @@
-<p>Start page</p>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Tarefas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Lista de Tarefas</h1>
+        <form id="taskForm">
+            <label for="tarefa">Qual tarefa você deseja adicionar?</label>
+            <input type="text" id="tarefa" name="tarefa" required>
+            
+            <label for="periodo">Qual período essa tarefa deve ser cumprida?</label>
+            <input type="text" id="periodo" name="periodo" placeholder="Horário Inicial & Horário Final" required>
+            
+            <label for="tipo">Qual o tipo de tarefa?</label>
+            <input type="text" id="tipo" name="tipo" required>
+            
+            <button type="submit">Adicionar Tarefa</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
